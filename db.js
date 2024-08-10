@@ -1,21 +1,17 @@
-import 'dotenv/config'
-import postgres from 'postgres'
+import 'dotenv/config';
+import postgres from 'postgres';
 
-const postgres = require('postgres');
-require('dotenv').config();
+// Desestruturação das variáveis de ambiente
+const { PGHOST, PGDATABASE, PGUSER, PGPASSWORD } = process.env;
 
-let { PGHOST, PGDATABASE, PGUSER, PGPASSWORD, ENDPOINT_ID } = process.env;
-
+// Configuração do cliente PostgreSQL
 const sql = postgres({
   host: PGHOST,
   database: PGDATABASE,
-  username: PGUSER,
+  user: PGUSER,
   password: PGPASSWORD,
   port: 5432,
-  ssl: 'require',
-  connection: {
-    options: `project=${ENDPOINT_ID}`,
-  },
+  ssl: 'require', // Mantenha 'require' se a conexão SSL for obrigatória
 });
 
-export default sql
+export default sql;
