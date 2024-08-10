@@ -1,7 +1,3 @@
-Claro! Aqui está a documentação sem formatação definida:
-
----
-
 # API de Gerenciamento de Vídeos
 
 ## Descrição
@@ -90,7 +86,7 @@ Respostas:
 
 1. Clone o Repositório:
 
-    git clone <URL-do-repositório>
+    git clone (https://github.com/EvertonCordeiro1994/api_videos)
 
 2. Instale as Dependências:
 
