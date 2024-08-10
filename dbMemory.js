@@ -4,7 +4,7 @@ export class dataBaseMemory {
     #videos = new Map()
 
     list(){
-        this.#videos.values
+        return this.#videos.values() 
     }
     
     create(video){
@@ -21,3 +21,4 @@ export class dataBaseMemory {
         this.#videos.delete(id)
     }
 }
+
