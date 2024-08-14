@@ -1,7 +1,3 @@
-Claro! Aqui está a documentação sem formatação definida:
-
----
-
 # API de Gerenciamento de Vídeos
 
 ## Descrição

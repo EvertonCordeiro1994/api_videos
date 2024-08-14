@@ -42,4 +42,4 @@ server.delete('/videos/:id', async (request, reply) => {
     return reply.status(200).send({ message: 'Vídeo deletado com sucesso!' });
 });
 
-server.listen({ port: 3333 });
+server.listen({ port: process.env.port ?? 3333 });
